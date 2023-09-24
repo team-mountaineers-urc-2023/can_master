@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="can_master" type="can_receiver.py" name="can_receiver" output="screen"/>
+    <node pkg="can_master" type="can_sender.py" name="can_sender" output="screen"/>
+    <!-- <arg name="node_start_delay" default="1.0" />
+    <node pkg="can_master" type="can_sender.py" name="can_sender" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/> -->
+
+</launch>
